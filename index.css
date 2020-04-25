@@ -1,5 +1,6 @@
 body {
-  padding-top: 80px;
+  padding-top: 88px;
+  padding-bottom: 20px;
   font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
@@ -11,7 +12,7 @@ body {
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1536px) {
   .container {
     padding-right: 100px;
     padding-left: 100px;
@@ -19,28 +20,32 @@ body {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0);
-  border: transparent;
-  min-height: 80px;
+  background: rgba(0, 0, 0, 0.75);
+  /* border: 1px solid rgb(102, 102, 102); */
+  min-height: 88px;
 }
 
 .navbar-brand {
   padding: 0 15px;
-  height: 80px;
-  line-height: 80px;
+  height: 88px;
+  line-height: 88px;
 }
 
 .navbar-toggle {
-  margin-top: 23px;
+  margin-top: 27px;
   bacground: rgba(38, 38, 38, 0.65);
 }
 
 @media (min-width: 768px) {
   .navbar-nav>li>a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     line-height: 20px;
   }
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: rgb(193, 193, 193);
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -60,17 +65,21 @@ body {
   text-transform: uppercase;
 }
 
-.content p {
+.content .header-text {
   font-size: 20px;
-  line-height: 30px;
   word-wrap: break-word;
-  padding-left: 150px;
-  padding-right: 150px;
   line-height: 40px;
 }
 
+@media (min-width: 1536px) {
+  .content .header-text {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
 .content button {
-  font-size: 50px;
+  font-size: 40px;
   text-transform: uppercase;
   background: rgba(4, 4, 4, 0.45);
   border: 1px solid black;
@@ -81,10 +90,45 @@ body {
 
 .content #responsibility {
   font-size: 43px;
+  margin-bottom: 40px;
 }
 
+/* .content #responsibility-row {
+  margin-bottom: 20px;
+} */
+/*
 .content .responsibility-desc {
-  height: 30px;
-  background-color: orange;
+  height: 90px;
+  background: rgba(198, 82, 71, 0.62);
   border: 1px solid black;
+} */
+
+.content #bottom-content {
+}
+
+.content .footer-text {
+  margin: 20px 0;
+  font-size: 20px;
+  word-wrap: break-word;
+  line-height: 40px;
+}
+
+@media (min-width: 1536px){
+  .content .footer-text {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.content #bottom-content .social-icon {
+  margin: 0 15px;
+}
+
+.content .footer-text a {
+  color: black;
+  font-size: 25px;
+}
+
+.content #contact-info {
+  line-height: 25px;
 }
